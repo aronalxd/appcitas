@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Citas médicas</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Citas médicas</h1>
+    </header>
+    <main>
+      <form id="appointment-form">
+        <h2>Agendar una cita</h2>
+        <label for="name-input">Nombre:</label>
+        <input type="text" id="name-input" required>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" required>
+        <label for="phone-input">Teléfono:</label>
+        <input type="tel" id="phone-input" required>
+        <label for="date-input">Fecha:</label>
+        <input type="date" id="date-input" required>
+        <label for="time-input">Hora:</label>
+        <input type="time" id="time-input" required>
+        <button type="submit">Agendar cita</button>
+      </form>
+      <table id="appointments-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
